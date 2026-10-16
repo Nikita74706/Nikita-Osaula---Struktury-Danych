@@ -28,7 +28,10 @@ def create_menu_option(
         lambda event: (canvas.itemconfig(
             text_id,
             fill="#F00524"),
-            canvas.config(cursor="hand2")
+            canvas.config(cursor="hand2"),
+            
+                
+
         )
 
     )
