@@ -9,4 +9,4 @@ def show_layer():
         return
 
     layer.plot()
-    plt.show
+    plt.show()

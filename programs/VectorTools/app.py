@@ -10,27 +10,15 @@ from src.menu_operations.load_data_and_remember_outcome import load_data_and_rem
 from src.data_service import get_layer
 from src.menu_operations.show_layer import show_layer
 from src.menu_operations.show_layer_info import show_layer_info
-
-
-
-def update_menu():
-    canvas.delete("layer status")
-
-    if get_layer is not None:
-        canvas.create_text(
-            180,
-            380,
-            text="FILE UPLOADED SUCCESSFULLY",
-            fill="green",
-            tags="layer_status"
-        )
-
-
+from src.update_menu import update_menu
+from src.menu_operations.save_data import save_data
 
 window, canvas = create_window()
 
-create_menu_option(canvas, 380, "Close Program", lambda: close_program(window))
+create_menu_option(canvas, 380, "Wczytaj warstwę", lambda: load_data_and_remember_outcome(), lambda: update_menu(canvas))
 create_menu_option(canvas, 400, "Wyświetl warstwę", lambda: show_layer())
-create_menu_option(canvas, 435, "Wyświetl informacje o warstwie", lambda: show_layer_info())
+create_menu_option(canvas, 420, "Wyświetl informacje o warstwie", lambda: show_layer_info())
+create_menu_option(canvas, 440, "Zapisz warstwę", lambda: save_data())
+create_menu_option(canvas, 460, "Zamknij program", lambda: close_program(window))
 
 window.mainloop()

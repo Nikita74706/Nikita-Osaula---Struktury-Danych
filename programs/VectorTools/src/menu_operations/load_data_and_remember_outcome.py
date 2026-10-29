@@ -18,9 +18,9 @@ def load_data():
         layer = gpd.read_file(path)
     except Exception:
         messagebox.showwarning(
-            "Błąd wczytywania",
-            "Nie udało się wczytać wybranego pliku.\n"
-            "Upewnij się, że jest to prawidłowy plik GIS."
+            "Loading error",
+            "Failed to load the selected file.\n"
+            "Ensure that it is a valid GIS file."
         )
         return None
     return layer
