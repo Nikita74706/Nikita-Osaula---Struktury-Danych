@@ -25,7 +25,7 @@ def save_data():
 
     try:
         if path.endswith(".csv"):
-            layer.to_csv(path, index=False)
+            layer.to_csv(path, sep= ",", encoding = "utf-8", index=False)
         else:
             layer.to_file(path)
 
