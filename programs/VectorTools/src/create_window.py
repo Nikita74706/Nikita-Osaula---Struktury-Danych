@@ -42,7 +42,7 @@ def create_window():
 
     canvas.create_text(
         120,
-        360,
+        330,
         text="Choose operation:",
         font=("Arial",15,"bold"),
         fill="black"

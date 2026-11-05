@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "test",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::2180" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "poligon" }, "geometry": { "type": "LineString", "coordinates": [ [ 10.0, 10.0 ], [ 10.0, 20.0 ], [ 20.0, 10.0 ], [ 20.0, 20.0 ] ] } },
+{ "type": "Feature", "properties": { "name": "polgon2" }, "geometry": { "type": "LineString", "coordinates": [ [ 25.0, 20.0 ], [ 25.0, 10.0 ] ] } },
+{ "type": "Feature", "properties": { "name": "polygon3" }, "geometry": { "type": "LineString", "coordinates": [ [ 30.0, 20.0 ], [ 30.0, 15.0 ], [ 35.0, 20.0 ], [ 30.0, 15.0 ], [ 30.0, 10.0 ], [ 30.0, 15.0 ], [ 35.0, 10.0 ] ] } },
+{ "type": "Feature", "properties": { "name": "poligon4" }, "geometry": { "type": "LineString", "coordinates": [ [ 45.0, 20.0 ], [ 45.0, 10.0 ], [ 40.0, 10.0 ], [ 40.0, 20.0 ], [ 45.0, 20.0 ] ] } },
+{ "type": "Feature", "properties": { "name": "polygon5" }, "geometry": { "type": "LineString", "coordinates": [ [ 60.0, 20.0 ], [ 50.0, 20.0 ], [ 50.0, 18.0 ], [ 60.0, 14.0 ], [ 60.0, 10.0 ], [ 50.0, 10.0 ] ] } },
+{ "type": "Feature", "properties": { "name": "polygon6" }, "geometry": { "type": "LineString", "coordinates": [ [ 70.0, 10.0 ], [ 72.0, 15.0 ], [ 74.0, 15.0 ], [ 74.0, 20.0 ], [ 72.0, 15.0 ], [ 74.0, 15.0 ], [ 74.0, 10.0 ] ] } }
+]
+}
